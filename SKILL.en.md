@@ -6,8 +6,8 @@ description: >
   a skill/workflow is usable, too complex, unclear, missing verification, in need
   of refactoring, or worth turning into a more reliable execution protocol. Also
   triggers when the user points out weak trigger logic, self-improvement loops,
-  write-back mechanisms, or rule health issues. Long-term writes require explicit
-  user authorization.
+  write-back mechanisms, repository README quality, or rule health issues.
+  Long-term writes require explicit user authorization.
 ---
 
 # Skill Doctor
@@ -92,6 +92,7 @@ Execution loop: how to observe, adjust, retry, and stop when the path fails
 Self-verification: how to prove the result actually works
 Fallbacks: missing entry points, save failures, permissions, login, CAPTCHA, etc.
 Learning record: where reusable lessons go after completion
+External README: whether a stranger can quickly understand the value, start using it, and get help
 ```
 
 Prioritize whether these elements form a closed loop. Polished wording without verification is a quality problem.
@@ -103,6 +104,7 @@ Also inspect the artifact itself:
 ```text
 Structural health: directory name matches YAML name; SKILL.md exists; frontmatter includes name and description; code fences close; internal links work; no orphan files invisible from SKILL.md.
 Trigger accuracy: description says both what it does and when to use it; covers real user phrasing; includes negative boundaries; avoids under-triggering.
+Repository README quality: if the skill/workflow will be published on GitHub, the README should follow GitHub's guidance by explaining what the project does, why it is useful, how users get started, where users can get help, and who maintains it; the first screen should include a one-sentence value proposition, real trigger examples, install paths, output shape, fit/non-fit boundaries, and language links when relevant.
 Token efficiency: SKILL.md stays compact; long examples/tables/rules move to references; every paragraph helps execution.
 Scope discipline: one clear task; no mixed stages, roles, or unrelated channels.
 Behavior validation: 2-3 real test prompts; compare with/without the skill or old/new behavior; proves the agent is more stable.
@@ -178,6 +180,7 @@ Missing loops:
 Engineering checks:
 - Structural health:
 - Trigger accuracy:
+- Repository README quality:
 - Token efficiency:
 - Behavior validation:
 - Safety side effects:
@@ -225,5 +228,6 @@ Did I identify the most execution-critical gaps?
 Did I avoid turning temporary experience into permanent rules?
 Did I provide actionable replacement text?
 Did I check structure, trigger, token cost, validation, and safety side effects?
+If the artifact will be published on GitHub, did I check that the README is clear, useful, and easy to start from?
 Did I propose what should be preserved and wait for user authorization?
 ```

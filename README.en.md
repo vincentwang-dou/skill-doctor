@@ -55,6 +55,7 @@ Find the missing loops in this workflow
 | Self-verification | How does the agent prove the result works? |
 | Fallbacks | What happens when login, permissions, saving, or entry points fail? |
 | Learning record | Which lessons should be written back to a skill, workflow, memory, or board? |
+| Repository README | Can a stranger quickly understand the value, start using it, and get help? |
 | Safety side effects | Could this cause publishing, deletion, payments, permission changes, or leaks? |
 
 ## Output Shape
@@ -84,6 +85,7 @@ Missing loops:
 Engineering checks:
 - Structural health:
 - Trigger accuracy:
+- Repository README quality:
 - Token efficiency:
 - Behavior validation:
 - Safety side effects:
