@@ -102,7 +102,7 @@ description: >
 ```text
 结构健康：目录名是否匹配 YAML name；是否有 SKILL.md；frontmatter 是否包含 name 和 description；代码块是否闭合；内部链接是否可达；是否存在无法被 SKILL.md 发现的孤儿文件。
 触发准确性：description 是否同时说明“做什么”和“什么时候用”；是否覆盖用户真实说法；是否有负向边界，避免误触发；是否容易 under-trigger。
-README 发布页健康：如果该 skill/workflow 要发布到 GitHub，README 是否按 GitHub 官方建议说明项目做什么、为什么有用、如何开始、哪里获得帮助、谁维护；首屏是否有一句话价值、真实触发句、安装路径、输出示例、适用/不适用边界和多语言跳转。
+README 发布页健康：如果该 skill/workflow 要发布到 GitHub，README 是否按 GitHub 官方建议说明项目做什么、为什么有用、如何开始、哪里获得帮助、谁维护；public GitHub skill 是否默认用英文 `README.md`，并用 `README.zh-CN.md` 提供中文切换；首屏是否有一句话价值、真实触发句、安装路径、输出示例、适用/不适用边界和多语言跳转。
 token 效率：SKILL.md 是否保持精简；长例子、长表格、细规则是否应该移到 references；每段内容是否真的帮助执行。
 范围克制：是否只服务一个清晰任务；是否混入多个阶段、多个角色或无关渠道。
 行为验证：是否有 2-3 个真实测试 prompt；是否能比较有 skill / 无 skill 或旧版 / 新版的执行差异；是否真的让 agent 更稳。

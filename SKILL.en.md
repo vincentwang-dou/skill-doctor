@@ -104,7 +104,7 @@ Also inspect the artifact itself:
 ```text
 Structural health: directory name matches YAML name; SKILL.md exists; frontmatter includes name and description; code fences close; internal links work; no orphan files invisible from SKILL.md.
 Trigger accuracy: description says both what it does and when to use it; covers real user phrasing; includes negative boundaries; avoids under-triggering.
-Repository README quality: if the skill/workflow will be published on GitHub, the README should follow GitHub's guidance by explaining what the project does, why it is useful, how users get started, where users can get help, and who maintains it; the first screen should include a one-sentence value proposition, real trigger examples, install paths, output shape, fit/non-fit boundaries, and language links when relevant.
+Repository README quality: if the skill/workflow will be published on GitHub, the README should follow GitHub's guidance by explaining what the project does, why it is useful, how users get started, where users can get help, and who maintains it; public GitHub skills should use English `README.md` by default and provide Chinese via `README.zh-CN.md`; the first screen should include a one-sentence value proposition, real trigger examples, install paths, output shape, fit/non-fit boundaries, and language links when relevant.
 Token efficiency: SKILL.md stays compact; long examples/tables/rules move to references; every paragraph helps execution.
 Scope discipline: one clear task; no mixed stages, roles, or unrelated channels.
 Behavior validation: 2-3 real test prompts; compare with/without the skill or old/new behavior; proves the agent is more stable.
